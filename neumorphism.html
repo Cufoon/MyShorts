@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #eeeeee;
+      }
+
+      .wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        margin-top: 10px;
+      }
+
+      .wrapper .item1,
+      .wrapper .item2,
+      .wrapper .item3,
+      .wrapper .item4,
+      .wrapper .item5,
+      .wrapper .item6,
+      .wrapper .item7,
+      .wrapper .item8,
+      .wrapper .item9-outer {
+        margin-left: 40px;
+      }
+
+      .item1 {
+        width: 80px;
+        height: 80px;
+        border-radius: 20px;
+        background: #eeeeee;
+        box-shadow: 10px 10px 15px #dddddd, -10px -10px 15px #ffffff;
+        margin: 10px;
+      }
+
+      .item2 {
+        width: 120px;
+        height: 120px;
+        border-radius: 30px;
+        background: #eeeeee;
+        box-shadow: 15px 15px 22.5px #dddddd, -15px -15px 22.5px #ffffff;
+        margin: 15px;
+      }
+
+      .item3 {
+        width: 160px;
+        height: 160px;
+        border-radius: 40px;
+        background: #eeeeee;
+        box-shadow: 20px 20px 30px #dddddd, -20px -20px 30px #ffffff;
+        margin: 20px;
+      }
+
+      .item4 {
+        width: 200px;
+        height: 200px;
+        border-radius: 50px;
+        background: #eeeeee;
+        box-shadow: 25px 25px 37.5px #dddddd, -25px -25px 37.5px #ffffff;
+        margin: 25px;
+      }
+
+      .item5 {
+        width: 240px;
+        height: 240px;
+        border-radius: 60px;
+        background: #eeeeee;
+        box-shadow: 30px 30px 45px #dddddd, -30px -30px 45px #ffffff;
+        margin: 30px;
+      }
+
+      .item6 {
+        width: 120px;
+        height: 80px;
+        border-radius: 20px;
+        background: #eeeeee;
+        box-shadow: 10px 10px 15px #dddddd, -10px -10px 15px #ffffff;
+        margin: 10px;
+      }
+
+      .item7 {
+        width: 80px;
+        height: 80px;
+        border-radius: 80px;
+        background: #eeeeee;
+        box-shadow: 10px 10px 15px #dddddd, -10px -10px 15px #ffffff;
+        margin: 10px;
+      }
+
+      .item8 {
+        width: 200px;
+        height: 120px;
+        border-radius: 80px 40px 20px 0;
+        background: #eeeeee;
+        box-shadow: 15px 15px 22.5px #dddddd, -15px -15px 22.5px #ffffff;
+        margin: 15px;
+      }
+
+      .item9 {
+        width: 120px;
+        height: 100px;
+        content: "";
+        background: #eeeeee;
+        clip-path: path(
+          "M40 100C20 100 10.2 83 24 60L45.6 24C60 0 60 0 74.4 24L96 60C109.8 83 100 100 80 100Z"
+        );
+      }
+
+      .item9-outer {
+        margin: 15px;
+        filter: drop-shadow(12px 12px 8px #dddddd)
+          drop-shadow(-12px -12px 8px #ffffff);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="item1"></div>
+      <div class="item2"></div>
+      <div class="item3"></div>
+      <div class="item4"></div>
+      <div class="item5"></div>
+    </div>
+    <div class="wrapper">
+      <div class="item8"></div>
+      <div class="item7"></div>
+      <div class="item6"></div>
+      <div class="item9-outer">
+        <div class="item9"></div>
+      </div>
+    </div>
+  </body>
+</html>
